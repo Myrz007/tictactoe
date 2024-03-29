@@ -1,0 +1,96 @@
+body {
+    height: 100%;
+    min-height: 620px;
+    width: 100%;
+    min-width: 620px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: bold 1.2em Arial, sans-serif;
+    color: white;
+    background-color: #212845;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+}
+
+.player,
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner,
+p {
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button,
+#submit,
+#cancel {
+    background-color: #F8D320;
+    height: 26px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    font: bold 0.8em Arial, sans-serif;
+}
+
+#board {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.cell {
+    border: 4px solid #206EFE;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+dialog {
+    padding: 0;
+    border: 4px solid white;
+    border-radius: 8px;
+}
+
+form,
+#winscreen {
+    min-width: 40vw;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    background-color: #212845;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
