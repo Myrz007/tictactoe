@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!--
+    -->
+
+    <header>
+        <div class="player">
+            <div id="playerone-name"></div>
+            <div id="playerone-score"></div>
+        </div>
+
+        <div id="infos">
+            <p id="turn"></p>
+
+            <div id="buttons">
+                <button id="restart">Restart</button>
+                <button id="edit">Edit names</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+
+        <div class="player">
+            <div id="playertwo-name"></div>
+            <div id="playertwo-score"></div>
+        </div>
+    </header>
+
+    <div id="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    
+    <dialog id="playerdialog">
+        <form method="dialog">
+            <label for="playerx-name">
+                Player X name (10 characters max): 
+                <input type="text" id="playerx-name" name="playerx-name" maxlength="10" />
+            </label>
+
+            <label for="playero-name">
+                Player O name (10 characters max): 
+                <input type="text" id="playero-name" name="playero-name" maxlength="10" />
+            </label>
+
+            <menu>
+                <input type="submit" id=submit value="Confirm">
+                <input type="button" id=cancel value="Cancel">
+            </menu>
+        </form>
+    </dialog>
+
+    <dialog id="windialog">
+        <div id="winscreen">
+            <div id="winner"></div>
+
+            <p>Want to continue?</p>
+            
+            <menu>
+                <button id="replay">Play again</button>
+                <button class="reset">Reset</button>
+            </menu>
+        </div>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>
