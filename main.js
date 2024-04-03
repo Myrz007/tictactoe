@@ -123,12 +123,14 @@ const game = (() => {
 
     submit.addEventListener('click', () => {
         editPlayerNames();
+        form.reset();
         displayNames();
         closeDialog(playerDialog);
         sayPlayerTurn();
     });
 
     cancel.addEventListener('click', () => {
+        form.reset();
         closeDialog(playerDialog);
     });
 
