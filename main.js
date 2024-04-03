@@ -25,6 +25,7 @@ const game = (() => {
     const edit = document.querySelector('#edit');
     const cells = document.querySelectorAll('.cell');
     const playerDialog = document.querySelector('#playerdialog');
+    const form = document.querySelector('form');
     const winDialog = document.querySelector('#windialog');
     const playerXName = document.querySelector('#playerx-name');
     const playerOName = document.querySelector('#playero-name');
