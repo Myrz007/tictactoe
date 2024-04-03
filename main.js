@@ -68,11 +68,6 @@ const game = (() => {
         if (playerOName.value !== '') playerO.name = playerOName.value;
     };
 
-    const cancelNameInputs = () => {
-        playerXName.value = '';
-        playerOName.value = '';
-    };
-
     const openDialog = (screen) => screen.showModal(); 
 
     const closeDialog = (screen) => screen.close();
@@ -128,14 +123,12 @@ const game = (() => {
 
     submit.addEventListener('click', () => {
         editPlayerNames();
-        cancelNameInputs();
         displayNames();
         closeDialog(playerDialog);
         sayPlayerTurn();
     });
 
     cancel.addEventListener('click', () => {
-        cancelNameInputs();
         closeDialog(playerDialog);
     });
 
